@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.507);
+}
+
+
+h1 {
+    color: Black;
+    font-size: 25px;
+}
+
+.MainContainer {
+    width: 100%;
+    height: 89vh;
+    position: relative;
+}
+
+.QuestionSideBar {
+    
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    color: black;
+    padding: 0.5em;
+}
+
+.QuestionNumber {
+    width: 100%;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 1px solid black;
+
+}
+
+.QuestionNumber:hover {
+    cursor: pointer;
+    background-color: rgba(139, 244, 244, 0.568);
+    color: blue;
+}
+
+.ActiveQuestion {
+    border: none;
+    outline: none;
+    background-color: skyblue;
+}
+
+.QuestionAnswereContainer {
+    width: 100%;
+    height: 100%;
+    padding-left: 15.5em;
+}
+
+
+#Question1,
+#Question2,
+#Question3,
+#Question4,
+#Question5,
+#Question6,
+#Question7,
+#Question8,
+#Question9 {
+    width: 100%;
+    height: 100%;
+}
+
+.UnactiveQuestion {
+    display: none;
+}
+
+.QuestionHeading {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0.5em;
+    font-size: 18px;
+}
+
+.CodeSnap {
+    width: 100%;
+}
+
+.ImgBox{
+    width: 50%;
+    height: 100%;
+}
+.ImgBox img {
+    width: 100%;
+}
+
+.OutPutBox {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(121, 240, 240);
+}
+
+#Flex-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.FlexColumn {
+    flex-direction: column;
+    transition: all 2.5s ease-in;
+}
+
+.card {
+    background-color: aquamarine;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+#HamMenu {
+    border: 1px solid white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 0.5em;
+    z-index: 20;
+    display: none;
+}
+
+.Clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeLabel {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 10px;
+    font-size: 14px;
+}
+
+#hourLabel,
+#minLabel,
+#secLabel,
+#AMPM {
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.tableSnap{
+    height: 80%;
+}
+
+table{
+    margin-left: 100px;
+    height: 100%;
+    color: black;
+    width: 80%;
+    font-weight: lighter;
+    font-size: 16px;
+  border-spacing: 5px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+th, td{
+    padding: 0.5em;
+    line-height: 35px;
+}
